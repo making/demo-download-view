@@ -17,9 +17,9 @@ public class DownloadView extends AbstractView {
     Resource file;
 
     @Override
-    protected void renderMergedOutputModel(Map<String, Object> map,
+    protected void renderMergedOutputModel(Map<String, Object> model,
             HttpServletRequest req, HttpServletResponse res) throws Exception {
-        String fileName = (String) map.get("fileName");
+        String fileName = (String) model.get("fileName");
         res.setHeader("Content-Disposition", "attachment; filename=" + fileName
                 + ".txt");
         res.setContentType("text/plain");
