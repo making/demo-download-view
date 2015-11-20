@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title></title>
+</head>
+<body>
+<form th:action="@{/download}" th:object="${helloForm}">
+    Filename: <input type="text" th:field="*{fileName}"/>
+    <span th:if="${#fields.hasErrors('fileName')}" th:errors="*{fileName}" style="color: red;"></span><br/>
+    <input type="submit" value="Download"/>
+</form>
+</body>
+</html>
