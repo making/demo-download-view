@@ -57,6 +57,7 @@
 					<archive>
 						<manifestEntries>
 							<Spring-Boot-Lib>lib/</Spring-Boot-Lib>
+							<Spring-Boot-Classes>.</Spring-Boot-Classes>
 						</manifestEntries>
 					</archive>
 				</configuration>
